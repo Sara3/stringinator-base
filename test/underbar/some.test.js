@@ -2,11 +2,11 @@ const _ = require('../../underbar');
 
 describe('some()', () => {
   it('returns true if any number is odd', () => {
-    // Your code goes here
+    expect(_.some([1,7,6], item => item % 2 === 1)).toBe(true);
   });
 
   it('returns false if no number is odd', () => {
-    // Your code goes here
+    expect(_.some([4,2,6], item => item % 2 === 1)).toBe(false);
   });
 
 });
